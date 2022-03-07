@@ -18,7 +18,7 @@ function conversionDegree(degree){
     
     //fluxo de erro
     if(!celsiusExist && !fahrenheitExist){
-        throw new Error('Grau sem identificação')
+        throw new Error('Grau não identificado')
     }
     
 
