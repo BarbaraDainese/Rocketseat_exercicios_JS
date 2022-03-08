@@ -90,6 +90,23 @@ function booksOfAugustoCury(){
 
 booksOfAugustoCury();
 
+function booksOfAuthor(author){
+    let books = [];
+
+    for(let category of booksByCategory){
+        for(let book of category.books){
+            if(book.author== author){
+                books.push(book.title)
+            }
+        }
+    }
+
+    console.log(`Livros do autor  ${author}: ${books.join(", ")}`)
+}
+
+booksOfAuthor('Augusto Cury');
+
+
 
 
 
